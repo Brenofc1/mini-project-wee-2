@@ -1,48 +1,117 @@
-* {
-    box-sizing: border-box;
-  }
+/*----------VAR section---------------*/
+
+:root {
+  --pink: #f960cb;
+  --pink-grad: #9d1e77;
+  --white: #ffffff;
+  --grey: #373535;
+}
+ 
+/*----------Body section---------------*/
+
+body {
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  color: var(--grey);
+
+}
+
+/*----------Header section--------------*/
+
+header{
+  text-align: center;
+  margin-bottom: 5px;
+
+}
+h1 {
+  color: var(--pink);
+  margin: 10px;
+  font-size: 40px;
+}
+
+header p{
+  color: var(--white);
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+/*--------Main container section---------*/
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+main main {
+  display: flex;
+  flex-direction: column; 
+}
+
+main :hover {
+  box-shadow: inset 0px 0px 8px;
+  rgba(232, 102, 236, 1), 0 0 15px
+  rgba(232, 102, 236, 1);
+
+}
+
+.container {
+  border-color: var(--white);
+  border: 2px dashed var(--white);
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-bottom: 30px;
+  padding: 5px;
+  width: 445px;
+}
+
+/*--------Container title section---------*/
+
+h2{
+  color: var(--pink);
+  font-size: 30px;
+  background: var(--grey);
+  margin: 10px;
+  text-align: left;
+  border-radius: 20%;
+  border: 2px solid var(--white);
+  border-radius: 8px;
+  padding: 5px;
+  width: 27%;
+ }
+
+.container h2 {
+  position: relative;
+  left: 5px;
+  top: -35px;
+  width: 400px;
   
-  body {
-    font-family: Arial;
-    margin: 0;
-  }
-  
-  main {
-    /* Turns this element into a flexbox */
-    display: flex;
-    /* Forces elements to the next line if they don't fit */
-    flex-wrap: wrap;
-    margin-top: 2%;
-  }
-  
-  .main-header {
-    display: flex;
-    /* Defines how to distribute the empty space between child elements */
-    justify-content: space-between;
-    padding: 60px;
-    background: #13293d;
-    color: #fff;
-  }
-  
-  .card {
-    /* A flex-basis of 200px sets the starting width */
-    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-    flex: 1 0 200px;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-  }
-  
-  .card header {
-    padding: 20px;
-    background: #13293d;
-    color: #fff;
-  }
-  
-  .card.camera {
-    /* With a flex-grow value of 2, this element grows twice as wide as others */
-    /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
-    flex: 2 1 200px;
-  }
-  
+}
+
+/*-----Container description section--------*/
+
+.container p {
+  color: var(--pink);
+  margin-top: -30px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+/*---------box description section-----------*/
+
+.description p {
+  color: var(--white);
+  text-align: left;
+  background-image: linear-gradient(var(--pink-grad), var(--pink));
+  margin: 10px;
+  border-radius: 8px;
+}
+
+/*--------------Footer section----------------*/
+
+footer {
+  color: var(--pink);
+  text-align: center;
+  padding-top: 25px;
+  font-size: 40px;
+}
